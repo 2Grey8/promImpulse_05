@@ -1,0 +1,127 @@
+.header{
+  width: 192rem;
+
+  &__wrap{
+    display: block;
+    width: 192rem;
+    margin: 0 auto;
+    margin-bottom: 8rem;
+
+    @include respond(phone){
+      width: 60rem;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      height: 0rem;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      height: 0rem;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__group{
+    width: 138rem;
+    margin: 0 auto;
+    margin-top: 4.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(phone){
+      width: 60rem;
+      justify-content: space-around;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      justify-content: space-around;
+      margin-bottom: 2rem;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      justify-content: space-around;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__logo{
+    display: block;
+    width: 8.5rem;
+    height: 2.68rem;
+  }
+
+  &__navigation{
+    width: 96rem;
+    display: block;
+
+    @include respond(phone){
+      width: 60rem;
+      display: none;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      justify-content: space-around;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+    @include respond(land){
+      width: 90rem;
+      justify-content: space-around;
+    }
+  }
+
+  &__item{
+    width: 10rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  &__contact{
+    display: block;
+    width: 13.8rem;
+    text-align: left;
+
+    @include respond(phone){
+      display: block;
+      width: 20rem;
+    }
+
+    @include respond(port){
+      display: block;
+      width: 20rem;
+    }
+
+    @include respond(land){
+      display: block;
+      width: 20rem;
+    }
+  }
+}

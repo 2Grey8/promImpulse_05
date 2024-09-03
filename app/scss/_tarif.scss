@@ -1,0 +1,251 @@
+.tarif{
+  width: 192rem;
+
+  &__inner{
+    display: block;
+    width: 192rem;
+    margin: 0 auto;
+    background: #FAFAFA;
+
+    @include respond(phone){
+      display: block;
+      width: 60rem;
+      margin: 0 auto;
+    }
+
+    @include respond(port){
+      display: block;
+      width: 90rem;
+      margin: 0 auto;
+    }
+
+    @include respond(land){
+      display: block;
+      width: 120rem;
+      margin: 0 auto;
+    }
+  }
+
+  &__title{
+    display: block;
+    padding-top: 3.5rem;
+    margin-left: 27rem;
+    margin-bottom: 2rem;
+    text-align: left;
+
+    @include respond(phone){
+      display: block;
+      width: 60rem;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+      text-align: center;
+    }
+
+    @include respond(port){
+      display: block;
+      width: 90rem;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+      text-align: center;
+    }
+
+    @include respond(land){
+      display: block;
+      width: 120rem;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+      text-align: center;
+    }
+
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 150%;
+    color: #000000;
+  }
+
+  &__group{
+    display: block;
+    width: 138rem;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+
+    @include respond(phone){
+      display: block;
+      width: 60rem;
+      margin: 0 auto;
+    }
+
+    @include respond(port){
+      display: block;
+      width: 90rem;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
+
+    @include respond(land){
+      display: block;
+      width: 120rem;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__box{
+    width: 138rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    background: #fff;
+
+    @include respond(phone){
+      display: flex;
+      justify-content: space-between;
+      width: 60rem;
+      margin: 0 auto;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    @include respond(port){
+      display: flex;
+      justify-content: space-between;
+      width: 90rem;
+      margin: 0 auto;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    @include respond(land){
+      display: flex;
+      justify-content: space-between;
+      width: 120rem;
+      margin: 0 auto;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__imgBox{
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #EDEDED;
+    position: relative;
+
+    @include respond(phone){
+      display: none;
+    }
+
+    @include respond(port){
+      display: none;
+    }
+
+    @include respond(land){
+
+    }
+  }
+
+  &__img{
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+
+    @include respond(phone){
+      display: none;
+    }
+
+    @include respond(port){
+
+    }
+
+    @include respond(land){
+
+    }
+  }
+
+  &__text{
+    display: block;
+    padding-top: 2.8rem;
+    text-align: left;
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #000000;
+
+    @include respond(port){
+      width: 90rem;
+      margin-left: 5rem;
+    }
+
+    @include respond(land){
+  
+    }
+  }
+
+  &__btn{
+    display: block;
+    width: 20rem;
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
+    padding-left: 2.9rem;
+    text-align: center;
+
+    @include respond(phone){
+      width: 6rem;
+    }
+
+    @include respond(port){
+      width: 20rem;
+    }
+
+    @include respond(land){
+
+    }
+
+    text-decoration: none;
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #fff;
+    background: #118BDD;
+    position: relative;
+
+    &::before{
+      content: "";
+      width: 24px;
+      height: 24px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(../img/arrow.png);
+      position: absolute;
+      top: 3rem;
+      left: 2rem;
+
+      @include respond(phone){
+
+      }
+
+      @include respond(port){
+        top: 2.5rem;
+        left: 0rem;
+      }
+
+      @include respond(land){
+
+      }
+    }
+  }
+}
